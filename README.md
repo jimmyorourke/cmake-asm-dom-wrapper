@@ -11,6 +11,7 @@ The [CPX example](example/) is taken from asm-dom-cmake with only modifications 
 * Install CMake, Emscripten, and Ninja (or alternatively use Make) 
 * Install gccx through npm (npm typically gets installed with Emscripten)
 * Git clone recursively (to get the asm-dom submodule) right into your project
+* Run gccx at build time through CMake and link against asm-dom as per [the example](example/CMakeLists.txt)
 
 To build the example
 ```
