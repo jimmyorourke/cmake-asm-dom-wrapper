@@ -11,7 +11,7 @@ The [CPX example](example/) is taken from asm-dom-cmake with only modifications 
 * Install CMake, Emscripten, and Ninja (or alternatively use Make) 
 * Install gccx through npm (npm typically gets installed with Emscripten)
 * Git clone recursively (to get the asm-dom submodule) right into your project
-* Run gccx at build time through CMake and link against asm-dom as per [the example](example/CMakeLists.txt)
+* Run `gccx` at build time through CMake and link against asm-dom as per [the example](example/CMakeLists.txt)
 
 To build the example
 ```
@@ -20,4 +20,4 @@ mkdir build && cd build
 emcmake cmake -G Ninja .. -DBUILD_ASM_DOM_EXAMPLE=1
 ninja
 ```
-Then to run it, `emrun example/index.html --no_browser` and open `http://localhost:6931` in your browser. Alternatively use Python's http.server.
+Then to run it, `emrun example/index.html --no_browser` and open `http://localhost:6931` in your browser. Alternatively use Python's `http.server`.
