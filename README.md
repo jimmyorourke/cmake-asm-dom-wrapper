@@ -16,7 +16,7 @@ To build the example
 ```
 cd cmake-asm-dom-wrapper
 mkdir build && cd build
-emcmake cmake -G Ninja .. -DBUILD_ASM_DOM_EXAMPLE
+emcmake cmake -G Ninja .. -DBUILD_ASM_DOM_EXAMPLE=1
 ninja
 ```
 Then to run it, `emrun example/index.html --no_browser` and open `http://localhost:6931` in your browser. Alternatively use Python's http.server.
