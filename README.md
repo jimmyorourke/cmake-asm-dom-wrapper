@@ -2,7 +2,7 @@
 
 This project wraps [asm-dom](https://github.com/mbasso/asm-dom) and [gccx](https://github.com/mbasso/gccx) in CMake for easy integration into C++ projects.
 
-This makes it simple to build dynamic single page web apps entirely in C++, using standard CMake and the [Emscripten](https://emscripten.org/) toolchain for WebAssembly, without writing any JavaScript!
+This makes it simple to build dynamic single page web apps entirely in C++ (or CPX, JSX like syntax for C++), using standard CMake and the [Emscripten](https://emscripten.org/) toolchain for WebAssembly, without writing any JavaScript!
 
 This project is similar to and was inspired by [asm-dom-cmake](https://github.com/ArthurSonzogni/asm-dom-cmake), but makes some different design decisions and is ready to be dropped into any new C++ WASM project as a submodule.
 The [CPX example](example/) is taken from asm-dom-cmake with only modifications to the build.
