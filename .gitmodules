@@ -1,0 +1,3 @@
+[submodule "asm-dom"]
+	path = asm-dom
+	url = https://github.com/mbasso/asm-dom.git
