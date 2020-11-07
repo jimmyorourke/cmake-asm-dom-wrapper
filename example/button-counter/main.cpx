@@ -3,7 +3,7 @@
 // the LICENSE file.
 // https://github.com/ArthurSonzogni/asm-dom-cmake/blob/master/src/main.cpx
 
-#include "asm-dom.hpp"
+#include <asm-dom.hpp>
 #include <emscripten/val.h>
 #include <functional>
 #include <string>

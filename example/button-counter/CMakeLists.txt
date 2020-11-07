@@ -26,5 +26,3 @@ configure_file(
   style.css
   ${CMAKE_CURRENT_BINARY_DIR}/style.css
 )
-
-#add_subdirectory(todomv-cpx)
