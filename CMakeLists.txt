@@ -21,7 +21,10 @@ if (NOT GCCX_FOUND)
 endif()
 
 
+# Run gccx on a list of sources, place the produced cpp files in output dir, and associate the process with 
+# target ${sources_target} for dependency propagation
 function(gccx sources_target cpx_sources cpp_output_dir)
+  # target clients can depend on to ensure generation occurs before required build step
   add_custom_target(${sources_target})
 
   # gccx doesn't have a nice way to operate on multiple files at once, and the directory input is inflexible when other
@@ -33,7 +36,7 @@ function(gccx sources_target cpx_sources cpp_output_dir)
   endforeach()
 endfunction()
 
-# Runs gccs on .CPX source file to generate cpp file in ${CMAKE_CURRENT_BINARY_DIR}
+# Runs gccs on .CPX source file
 function(gccx_internal target cpx_source cpp_output_dir)
   get_filename_component(name ${cpx_source} NAME_WE)
 
