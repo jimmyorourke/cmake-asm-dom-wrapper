@@ -2,7 +2,7 @@
 
 This project wraps [asm-dom](https://github.com/mbasso/asm-dom) and [gccx](https://github.com/mbasso/gccx) in CMake for easy integration into C++ projects.
 
-This makes it simple to build dynamic single page web apps entirely in C++ (or CPX, JSX like syntax for C++), using standard CMake and the [Emscripten](https://emscripten.org/) toolchain for WebAssembly, without writing any JavaScript!
+This makes it simple to build dynamic single page web apps entirely in C++ (or [CPX](https://github.com/mbasso/gccx/blob/master/docs/syntax.md), JSX-like syntax for C++), using standard CMake and the [Emscripten](https://emscripten.org/) toolchain for WebAssembly, without writing any JavaScript!
 
 This project is similar to and was inspired by [asm-dom-cmake](https://github.com/ArthurSonzogni/asm-dom-cmake), but makes some different design decisions and is ready to be dropped into any new C++ WASM project as a submodule.
 
@@ -13,9 +13,9 @@ The [todo-mvc CPX example](example/todomvc-cpp) is based on an [original example
 
 ## Installing and Building
 * Install CMake, Emscripten, and Ninja (or alternatively use Make) 
-* Install gccx through npm (npm typically gets installed with Emscripten)
+* Install `gccx` through npm (npm typically gets installed with Emscripten)
 * Git clone recursively (to get the asm-dom submodule) right into your project
-* Run `gccx` at build time through CMake and link against asm-dom as per [the examples](example/button-counter/CMakeLists.txt)
+* Run `gccx` at build time through CMake and link against `asm-dom` as per [the examples](example/button-counter/CMakeLists.txt)
 
 To build the examples
 ```
