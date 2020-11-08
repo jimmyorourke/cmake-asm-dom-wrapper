@@ -30,11 +30,3 @@ configure_file(
   index.html
   ${CMAKE_CURRENT_BINARY_DIR}/index.html
 )
-set(STYLES
-  css/base.css
-  css/index.css
-)
-foreach(STYLE ${STYLES})
-  get_filename_component(STYLE_FILE ${STYLE} NAME)
-  configure_file(${STYLE} ${CMAKE_CURRENT_BINARY_DIR}/css/${STYLE_FILE})
-endforeach(STYLE ${STYLES})
