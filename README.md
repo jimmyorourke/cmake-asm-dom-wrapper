@@ -6,9 +6,10 @@ This makes it simple to build dynamic single page web apps entirely in C++ (or C
 
 This project is similar to and was inspired by [asm-dom-cmake](https://github.com/ArthurSonzogni/asm-dom-cmake), but makes some different design decisions and is ready to be dropped into any new C++ WASM project as a submodule.
 
-The[button-counter CPX example](example/button-counter/) is taken from asm-dom-cmake with modifications to the build. See [@ArthurSonzogni](https://github.com/ArthurSonzogni)'s [live demo](http://arthursonzogni.github.io/asm-dom-cmake/).
+The[button-counter CPX example](example/button-counter/) is taken from asm-dom-cmake with modifications to the build. 
+[Live demo](https://jimmyorourke.github.io/cmake-asm-dom-wrapper/example-build/button-counter).
 
-The [todo-mvc CPX example](example/todomvc-cpp) is based on an [original example](https://github.com/mbasso/asm-dom/tree/master/examples/todomvc%20-%20cpx) from asm-dom. See author [@mbasso](https://github.com/mbasso)'s [live demo](https://mbasso.github.io/asm-dom/examples/todomvc/).
+The [todo-mvc CPX example](example/todomvc-cpp) is based on an [original example](https://github.com/mbasso/asm-dom/tree/master/examples/todomvc%20-%20cpx) from asm-dom. [Live demo](https://jimmyorourke.github.io/cmake-asm-dom-wrapper/example-build/todomvc-cpp).
 
 ## Installing and Building
 * Install CMake, Emscripten, and Ninja (or alternatively use Make) 
