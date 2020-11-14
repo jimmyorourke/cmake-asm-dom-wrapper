@@ -4,7 +4,7 @@ This project wraps [asm-dom](https://github.com/mbasso/asm-dom) and [gccx](https
 
 This makes it simple to build dynamic single page web apps entirely in C++ (or [CPX](https://github.com/mbasso/gccx/blob/master/docs/syntax.md), JSX-like syntax for C++), using standard CMake and the [Emscripten](https://emscripten.org/) toolchain for WebAssembly, without writing any JavaScript!
 
-This project is similar to and was inspired by [asm-dom-cmake](https://github.com/ArthurSonzogni/asm-dom-cmake), but makes some different design decisions and is ready to be dropped into any new C++ WASM project as a submodule.
+This project is similar to and was inspired by [asm-dom-cmake](https://github.com/ArthurSonzogni/asm-dom-cmake), but makes some different design decisions and is ready to be dropped into any new C++ WASM project as a submodule. See [cppmart-asmdom](https://github.com/jimmyorourke/cppmart-asmdom) as a project integration example.
 
 The [button-counter CPX example](example/button-counter/) is taken from asm-dom-cmake with modifications to the build. 
 [Live demo](https://jimmyorourke.github.io/cmake-asm-dom-wrapper/example-build/button-counter).
